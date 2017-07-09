@@ -1,6 +1,7 @@
 {"0.5.3",
  [{<<"0\\.3(\\.[0-9]+)?">>,
    [
+    {apply,{application,stop,[statsderl]}},
     {add_module,statsderl_pool},
     {add_module,statsderl_protocol},
     {add_module,statsderl_server},
@@ -10,6 +11,6 @@
     {load_module,statsderl},
     {load_module,statsderl_app},
     {load_module,statsderl_sup},
-    {restart_application,statsderl}
+    {apply,{application,start,[statsderl]}}
    ]}],
  [{<<"0\\.3(\\.[0-9]+)?">>,[]}]}.
