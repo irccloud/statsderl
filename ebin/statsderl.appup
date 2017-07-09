@@ -1,0 +1,15 @@
+{"0.5.3",
+ [{<<"0\\.3(\\.[0-9]+)?">>,
+   [
+    {add_module,statsderl_pool},
+    {add_module,statsderl_protocol},
+    {add_module,statsderl_server},
+    {add_module,statsderl_transform},
+    {add_module,statsderl_udp},
+    {add_module,statsderl_utils},
+    {load_module,statsderl},
+    {load_module,statsderl_app},
+    {load_module,statsderl_sup},
+    {restart_application,statsderl}
+   ]}],
+ [{<<"0\\.3(\\.[0-9]+)?">>,[]}]}.
